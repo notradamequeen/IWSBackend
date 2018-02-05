@@ -17,9 +17,6 @@ django = "==2.0"
 gunicorn = "==19.7.1"
 "psycopg2" = "==2.7.3.2"
 whitenoise = "==3.3.1"
-djangorestframework = "==3.7.7"
-django-rest-framework = "==0.1.0"
-flake8 = "==3.5.0"
 
 
 [dev-packages]
