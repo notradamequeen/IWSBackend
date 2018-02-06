@@ -19,8 +19,7 @@ class RiskTypeList(generics.ListCreateAPIView):
         # Note the use of `get_queryset()` instead of `self.queryset`
         queryset = self.get_queryset()
         serializer = RiskTypeSerializer(queryset, many=True)
-        if serializer.is_valid():
-            return Response(serializer.data)
+        return Response(serializer.data)
 
     def perform_create(self, serializer):
         serializer = RiskTypeSerializer(data=self.request.data, many=True)
